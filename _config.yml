@@ -1,0 +1,39 @@
+name: Aykut Yilmaz
+description: Official Homepage of Aykut Yilmaz.
+url: https://aykut.ga
+
+social:
+  email: aykuxt@gmail.com
+  facebook: aykuxt
+  twitter: aykuxt
+  instagram: aykuxt
+  snapchat: aykuuut78
+  googleplus: 111933668431628408549 # anything in your profile username that comes after plus.google.com/
+  youtube: channel/UCtdumlTH5ANHFl_O4rA26cg # channel/<your_long_string> or user/<user-name>
+  github: aykut78
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+permalink: none
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plug-ins
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - vendor/
