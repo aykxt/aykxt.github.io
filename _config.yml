@@ -27,7 +27,6 @@ kramdown:
 
 # Plug-ins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
@@ -36,4 +35,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-  - vendor/

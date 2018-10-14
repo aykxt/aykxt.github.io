@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
   font-family: "Product Sans"
   src: url("/assets/font/regular.tff");
 }
@@ -32,6 +32,7 @@ hr {
 }
 .social-links {
   font-size: 3em;
+  box-sizing: content-box !important;
 }
 .social-links a {
   color: #212121;
