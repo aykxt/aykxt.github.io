@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title></title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
+    <style media="screen">
+      {% include main.css %}
+    </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
@@ -28,17 +28,32 @@
     </header>
     <hr>
     <div class="container">
-      <h2>Follow me on:</h2>
       <div class="social-links">
-        <a href="https://www.facebook.com/{{ site.social.facebook }}"><i class="fab fa-facebook-f fa-fw"></i></a>
-        <a href="https://twitter.com/{{ site.social.twitter }}"><i class="fab fa-twitter fa-fw"></i></a>
-        <a href="https://www.instagram.com/{{ site.social.instagram }}"><i class="fab fa-instagram fa-fw"></i></a>
-        <a href="https://www.snapchat.com/add/{{ site.social.snapchat }}"><i class="fab fa-snapchat-ghost fa-fw"></i></a>
-        <a href="https://plus.google.com/{{ site.social.googleplus }}"><i class="fab fa-google-plus-g fa-fw"></i></a>
-        <a href="https://www.youtube.com/{{ site.social.youtube }}"><i class="fab fa-youtube fa-fw"></i></a>
+        <h2>Follow me on:</h2>
+
+        <a href="https://www.facebook.com/{{ site.social.facebook }}">{% include facebook-f.svg %}</a>
+        <a href="https://twitter.com/{{ site.social.twitter }}">{% include twitter.svg %}</a>
+        <a href="https://www.instagram.com/{{ site.social.instagram }}">{% include instagram.svg %}</a>
+        <a href="https://www.snapchat.com/add/{{ site.social.snapchat }}">{% include snapchat-ghost.svg %}</a>
+        <a href="https://plus.google.com/{{ site.social.googleplus }}">{% include google-plus-g.svg %}</a>
+        <a href="https://www.youtube.com/{{ site.social.youtube }}">{% include youtube.svg %}</a>
       </div>
     </div>
 
-    <script src="/assets/js/main.js"></script>
+    <script>
+    function targetBlank() {
+      var internal = location.host.replace("www.", "");
+          internal = new RegExp(internal, "i");
+
+      var a = document.getElementsByTagName('a');
+      for (var i = 0; i < a.length; i++) {
+        var href = a[i].host;
+        if( !internal.test(href) ) {
+          a[i].setAttribute('target', '_blank');
+        }
+      }
+    };
+    window.onload = targetBlank();
+    </script>
   </body>
 </html>
