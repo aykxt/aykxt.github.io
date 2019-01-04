@@ -3,14 +3,15 @@ description: Official Homepage of Aykut Yilmaz.
 url: https://aykut.ga
 
 social:
-  email: aykuxt@gmail.com
+  email: mail@aykut.ga
   facebook: aykuxt
   twitter: aykuxt
   instagram: aykuxt
   snapchat: aykuuut78
-  googleplus: 111933668431628408549 # anything in your profile username that comes after plus.google.com/
-  youtube: channel/UCtdumlTH5ANHFl_O4rA26cg # channel/<your_long_string> or user/<user-name>
+  googleplus: +AykutYilmaz # anything in your profile username that comes after plus.google.com/
+  youtube: AykutYilmaz # channel/<your_long_string> or user/<user-name>
   github: aykut78
+  telegram: aykxt
 
 # Defaults
 defaults:

@@ -1,37 +1,72 @@
-@font-face {
-  font-family: "Product Sans"
-  src: url("/assets/font/regular.tff");
-}
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
-  font-family: "Product Sans";
+  font-family: "Raleway", sans-serif;
   padding: 0;
   margin: 0;
   border: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+}
+footer {
+  flex-shrink: 0;
+  padding: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 2.5rem;
+}
+footer p {
+  float: left;
+}
+footer svg {
+  margin-top: 9.5px;
+  height: 2rem;
+  float: right;
+  transition: .3s;
+}
+footer a {
+  color: black;
+}
+footer a:hover svg{
+  opacity: .5;
 }
 .container {
-  max-width: 1000px;
+  max-width: 970px;
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 header {
   text-align: center;
+  margin: 4rem auto;
 }
 h1 {
-  font-size: 5.5em;
+  font-size: 3.5em;
+  font-weight: 600;
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+header h1 {
+  margin-bottom: 0;
+}
+header p {
+  font-size: 1.5rem;
 }
 hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.social-links {
+  text-align: center;
 }
 .social-links a {
   color: #212121;
@@ -45,8 +80,8 @@ hr {
   box-shadow: 0px 0px 2px #888;
   border-radius: 100%;
   overflow: visible;
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   fill: currentColor;
   margin: .5rem;
   padding: 1.5rem;
