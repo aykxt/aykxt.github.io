@@ -1,0 +1,40 @@
+.social-links {
+  text-align: center;
+
+  a {
+    color: #212121;
+    transition: .3s;
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  svg {
+    display: inline-block;
+    box-shadow: 0px 0px 2px #888;
+    border-radius: 100%;
+    overflow: visible;
+    height: 5rem;
+    width: 5rem;
+    fill: currentColor;
+    margin: .5rem;
+    padding: 1.5rem;
+  }
+
+}
+
+@media (max-width:839px) {
+
+  .social-links {
+    text-align: center;
+
+    svg {
+      padding: 1rem;
+      height: 4rem;
+      width: 4rem;
+      margin: .5rem;
+    }
+    
+  }
+
+}

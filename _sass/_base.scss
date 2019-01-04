@@ -1,0 +1,43 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+}
+.container {
+  max-width: 970px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  text-align: center;
+  margin: 4rem auto;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+  
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

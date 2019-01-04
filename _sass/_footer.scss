@@ -1,0 +1,26 @@
+footer {
+  flex-shrink: 0;
+  padding: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 2.5rem;
+
+  p {
+    float: left;
+  }
+
+  svg {
+    margin-top: 9.5px;
+    height: 2rem;
+    float: right;
+    transition: .3s;
+  }
+
+  a {
+    color: black;
+
+    &:hover svg{
+      opacity: .5;
+    }
+    
+  }
+}

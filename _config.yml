@@ -8,16 +8,15 @@ social:
   twitter: aykuxt
   instagram: aykuxt
   snapchat: aykuuut78
-  googleplus: +AykutYilmaz # anything in your profile username that comes after plus.google.com/
-  youtube: AykutYilmaz # channel/<your_long_string> or user/<user-name>
+  googleplus: +AykutYilmaz
+  youtube: AykutYilmaz
   github: aykut78
   telegram: aykxt
 
-# Defaults
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: ""
     values:
       layout: "default"
 
@@ -26,10 +25,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# Plug-ins
-plugins:
+sass:
+  style: :compressed
 
-# Exclude these files from your production _site
 exclude:
   - Gemfile
   - Gemfile.lock

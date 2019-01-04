@@ -1,83 +1,26 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Official Homepage of Aykut Yilmaz.</title>
+<header class="container">
+  <h1>My Name is Aykut Yilmaz.</h1>
+  <p>I am a developer and website designer from Germany.</p>
+</header>
+<hr>
+<div class="container">
+  <div class="social-links">
+    <h2>Follow me on:</h2>
 
-  <style media="screen">{% include main.css %}</style>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway">
+    <a href="https://www.facebook.com/{{ site.social.facebook }}">{% include facebook-f.svg %}</a>
+    <a href="https://twitter.com/{{ site.social.twitter }}">{% include twitter.svg %}</a>
+    <a href="https://www.instagram.com/{{ site.social.instagram }}">{% include instagram.svg %}</a>
+    <a href="https://www.snapchat.com/add/{{ site.social.snapchat }}">{% include snapchat-ghost.svg %}</a>
+    <a href="https://plus.google.com/{{ site.social.googleplus }}">{% include google-plus-g.svg %}</a>
+    <a href="https://www.youtube.com/{{ site.social.youtube }}">{% include youtube.svg %}</a>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#d32f2f">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+    <h2>Mail me:</h2>
 
-  <meta property="og:image:height" content="1257">
-  <meta property="og:image:width" content="2400">
-  <meta property="og:description" content="Junior developer and web designer from Germany">
-  <meta property="og:title" content="Official Homepage of Aykut Yilmaz.">
-  <meta property="og:url" content="https://aykut.ga">
-  <meta property="og:image" content="https://aykut.ga/assets/img/og-image.jpg">
-</head>
-
-<body>
-  <div class="main-content">
-    <header class="container">
-      <h1>My Name is Aykut Yilmaz.</h1>
-      <p>I am a developer and website designer from Germany.</p>
-    </header>
-    <hr>
-    <div class="container">
-      <div class="social-links">
-        <h2>Follow me on:</h2>
-
-        <a href="https://www.facebook.com/{{ site.social.facebook }}">{% include facebook-f.svg %}</a>
-        <a href="https://twitter.com/{{ site.social.twitter }}">{% include twitter.svg %}</a>
-        <a href="https://www.instagram.com/{{ site.social.instagram }}">{% include instagram.svg %}</a>
-        <a href="https://www.snapchat.com/add/{{ site.social.snapchat }}">{% include snapchat-ghost.svg %}</a>
-        <a href="https://plus.google.com/{{ site.social.googleplus }}">{% include google-plus-g.svg %}</a>
-        <a href="https://www.youtube.com/{{ site.social.youtube }}">{% include youtube.svg %}</a>
-
-        <h2>Mail me:</h2>
-
-        <a href="https://t.me/{{ site.social.telegram }}">{% include telegram-plane.svg %}</a>
-        <a href="mailto:{{ site.social.email }}">{% include envelope.svg %}</a>
-      </div>
-    </div>
+    <a href="https://t.me/{{ site.social.telegram }}">{% include telegram-plane.svg %}</a>
+    <a href="mailto:{{ site.social.email }}">{% include envelope.svg %}</a>
   </div>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2019. All rights reserved.</p>
-      <a href="https://github.com/{{ site.social.github }}">{% include github.svg %}</a>
-    </div>
-  </footer>
-
-  <script>
-    function targetBlank() {
-      var internal = location.host.replace("www.", "");
-      internal = new RegExp(internal, "i");
-
-      var a = document.getElementsByTagName('a');
-      for (var i = 0; i < a.length; i++) {
-        var href = a[i].host;
-        if (!internal.test(href)) {
-          a[i].setAttribute('target', '_blank');
-        }
-      }
-    };
-    window.onload = targetBlank();
-  </script>
-</body>
-
-</html>
+</div>
