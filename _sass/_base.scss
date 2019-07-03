@@ -11,6 +11,12 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+@media (prefers-color-scheme: dark) {
+  body { background:  #222; color: white;}
+  a {color: white !important}
+  footer svg {fill: white}
+}
+
 .main-content {
   flex: 1;
 }
@@ -41,5 +47,4 @@ hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
