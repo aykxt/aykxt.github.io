@@ -21,6 +21,7 @@ defaults:
       layout: "default"
 
 permalink: none
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
