@@ -24,3 +24,7 @@ footer {
 
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  footer svg {fill:white}
+}
