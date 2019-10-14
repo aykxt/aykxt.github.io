@@ -37,4 +37,4 @@ exclude:
   - CNAME
 
 plugins:
-  - jekyll-target-blank
+  - jekyll-sitemap
